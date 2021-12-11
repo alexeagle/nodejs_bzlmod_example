@@ -1,6 +1,7 @@
 module(
     name = "use-nodejs",
     version = "0.1",
+    toolchains_to_register = ["@node16_toolchains//:all"],
 )
 
 bazel_dep(name = "bazel_skylib", version = "1.0.3")
